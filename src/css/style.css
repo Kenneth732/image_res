@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { background-color: black; }
+
+main {
+  column-count: 1;
+  break-inside: avoid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+
+  & img {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (width > 700px) {
+  main {
+    column-count: 2;
+  }
+}
+
+@media (width > 1000px) {
+  main {
+    column-count: 3;
+  }
+}
+
+@media (width > 1300px) {
+  main {
+    column-count: 4;
+  }
+}
